@@ -1,0 +1,71 @@
+html, body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom right, #1e1e2f, #2d2d44);
+  color: #fff;
+  min-height: 100vh;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 10px;
+}
+
+#title {
+  font-size: 2em;
+  margin-bottom: 0.3em;
+  text-shadow: 1px 1px 4px #000;
+  margin-top: 1em;
+}
+
+#description {
+  font-family: 'Poppins', sans-serif;
+  font-weight: normal;
+  margin-bottom: 2em;
+  color: #ccc;
+}
+
+#chart-container {
+  position: relative;
+  background-color: #1a1a2e;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  margin-bottom: 7em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#chart {
+  width: 1400px;
+  height: 750px;
+}
+
+.tooltip {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: white;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  max-width: 500px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.axis path,
+.axis line {
+  stroke: #888;
+}
+
+.tick text {
+  fill: #ccc;
+  font-size: 12px;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Choropleth Map - US Education</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/topojson-client@3"></script>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+  <style>body { font-family: 'Poppins', sans-serif; }</style>
+</head>
+<body>
+  <h1 id="title">United States Educational Attainment</h1>
+  <p id="description">
+    Percentage of adults age 25 and older with a bachelor's degree or higher (2010–2014)
+  </p>
+
+  <div id="choropleth-container">
+    <div id="choropleth"></div>
+    <div id="legend"></div>
+    <div id="tooltip"></div>
+  </div>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <footer style="margin-top:2em; padding: 2em 0 1em 0; color: #aaa; font-size: 1em; text-align: center; width: 100%;">
+    &copy; 2025 Created by Hafizh Raihan
+  </footer>
+</body>
+</html>

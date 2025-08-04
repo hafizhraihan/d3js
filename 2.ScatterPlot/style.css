@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to bottom right, #1e1e2f, #2d2d44);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 10px;
+  min-height: 100vh;
+}
+
+#title {
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 4px #000;
+  margin: 3em 0 2em 0;
+}
+
+#chart-container {
+  position: relative;
+  background-color: #1a1a2e;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+  margin-bottom: 7em;
+}
+
+svg {
+  display: block;
+  margin: auto;
+}
+
+#tooltip {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.85);
+  color: white;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 5px;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  max-width: 500px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.dot {
+  fill: #4db8ff;
+  stroke: #ddd;
+  stroke-width: 1px;
+  cursor: pointer;
+}
+
+.dot.doping {
+  fill: #e67e22;
+}
+
+.dot:hover {
+  stroke: #fff;
+  stroke-width: 2px;
+}
+
+#legend {
+  margin-top: 20px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  color: #f0f0f0;
+}
+
+.legend-color {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
